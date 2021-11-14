@@ -1,0 +1,18 @@
+{
+  "buttons": {
+    "add": "Add",
+    "cancel": "Cancel",
+    "close": "Close",
+    "download": "Download",
+    "edit": "Edit",
+    "register": "Register",
+    "submit": "Submit"
+  },
+  "general": {
+    "title": "Helo Time-Tracking"
+  },
+  "languages": {
+    "de": "DE",
+    "en": "EN"
+  }
+}

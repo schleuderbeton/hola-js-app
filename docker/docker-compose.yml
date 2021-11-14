@@ -1,0 +1,36 @@
+version: '3.4'
+
+services:
+    claus:
+        image: ${DOCKER_REGISTRY}/${APP_NAME}:${APP_VERSION}
+        container_name: ${CONTAINER_NAME}
+        restart: unless-stopped
+        depends_on:
+            - spensa_mongodb
+        env_file:
+            - .env
+            - .env.secrets
+        ports:
+            - "${PORT_HOST}:${PORT_CONTAINER}"
+        environment:
+            - PORT=${PORT_CONTAINER}
+        networks:
+            - spensa_net
+            - reverseproxy_net
+
+    spensa_mongodb:
+        image: bitnami/mongodb:4.4.10
+        container_name: spensa_mongodb
+        env_file:
+            - .env
+            - .env.secrets
+        ports:
+            - "27017:27017"
+        networks:
+            - spensa_net
+
+networks:
+    reverseproxy_net:
+        external: true
+    spensa_net:
+        external: true

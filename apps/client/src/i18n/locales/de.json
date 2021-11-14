@@ -1,0 +1,18 @@
+{
+  "buttons": {
+    "add": "Hinzufügen",
+    "cancel": "Abbrechen",
+    "close": "Schliessen",
+    "download": "Herunterladen",
+    "edit": "Editieren",
+    "register": "Registrieren",
+    "submit": "Senden"
+  },
+  "general": {
+    "title": "Hallo Time-Tracking"
+  },
+  "languages": {
+    "de": "DE",
+    "en": "EN"
+  }
+}

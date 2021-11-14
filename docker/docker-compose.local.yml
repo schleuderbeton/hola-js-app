@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+    claus:
+#        todo: possible to use values from env files?
+        build:
+            context: ../
+            dockerfile: docker/Dockerfile
+        container_name: claus
+        depends_on:
+            - spensa_mongodb
+        env_file:
+            - ../.env.local
+        ports:
+            - "3000:3000"
+
+    spensa_mongodb:
+        image: bitnami/mongodb:4.4.10
+        env_file:
+            - ../.env.local
+        ports:
+            - "27017:27017"
+        volumes:
+            - mongodb:/bitnami/mongodb
+
+volumes:
+    mongodb:
+        name: spensa_mongodb

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "a1",
+    "type": "meat",
+    "kind": "beef",
+    "name": "filet",
+    "quantity": "899",
+    "unit": "gr",
+    "origin": "ch",
+    "creation_date": "2021-11-13",
+    "bestbefore_date": "2022-11-13",
+    "state": "raw",
+    "tags": ["2021er", "Sgier Rind"]
+  },
+  {
+    "id": "a2",
+    "type": "vegetable",
+    "kind": "chili",
+    "name": "chili",
+    "quantity": "13",
+    "unit": "pc",
+    "origin": "ch",
+    "creation_date": "2021-09-07",
+    "bestbefore_date": "2022-09-28",
+    "state": "raw",
+    "tags": ["r17", "rooftop chilies"]
+  },
+  {
+    "id": "a3",
+    "type": "meal",
+    "kind": "beef",
+    "name": "bolognese sauce",
+    "quantity": "700",
+    "unit": "ml",
+    "origin": "ch",
+    "creation_date": "2021-10-01",
+    "bestbefore_date": "2022-10-01",
+    "state": "cooked",
+    "tags": ["homemade", "papa"]
+  }
+]

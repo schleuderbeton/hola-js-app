@@ -84,6 +84,7 @@ __metadata:
     "@nestjs/common": ^8.0.0
     "@nestjs/config": ^1.0.1
     "@nestjs/core": ^8.0.0
+    "@nestjs/mapped-types": "*"
     "@nestjs/mongoose": ^9.0.0
     "@nestjs/platform-express": ^8.0.0
     "@nestjs/schematics": ^8.0.0
@@ -1908,6 +1909,18 @@ __metadata:
     "@nestjs/websockets":
       optional: true
   checksum: ddcddcebd9e006b41a7efa3b3413e7cca33af669691598953d83708445cdcb4bc4c59e1b224e0ef545f9759757d14be31477aa651a4e9ecb9b4aae1da74d7c73
+  languageName: node
+  linkType: hard
+
+"@nestjs/mapped-types@npm:*":
+  version: 1.0.0
+  resolution: "@nestjs/mapped-types@npm:1.0.0"
+  peerDependencies:
+    "@nestjs/common": ^7.0.8 || ^8.0.0
+    class-transformer: ^0.2.0 || ^0.3.0 || ^0.4.0
+    class-validator: ^0.11.1 || ^0.12.0 || ^0.13.0
+    reflect-metadata: ^0.1.12
+  checksum: 64e4bb9313a0d71c9535a36679e3c0d3590a8cfd3cd0897175213131afa9bb4b47f547607955f0e3578f26c509e755d7adc898bfcf47bb90117688b5d9b333fb
   languageName: node
   linkType: hard
 

@@ -7,7 +7,7 @@
           <q-breadcrumbs-el
             class="cursor-pointer"
             icon="home"
-            label="claus"
+            label="oniZer"
             @click="navigateTo('/')"
           />
           <q-breadcrumbs-el

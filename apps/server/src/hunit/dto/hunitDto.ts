@@ -1,4 +1,4 @@
-export class TesticoHunitDto {
+export class HunitDto {
     //id: string;             // unique identifier
     type: string;           // meat, vegetable, fruit, meal, herb, beer, wine, booze
     kind: string;           // deer, beef, hog, chili, broccoli, IPA, Bordeaux, Rum

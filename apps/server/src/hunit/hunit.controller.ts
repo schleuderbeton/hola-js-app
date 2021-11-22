@@ -1,10 +1,10 @@
 import {Controller, Get, Post, Body, Patch, Param, Delete, Put} from '@nestjs/common';
-import {TesticoService} from "./testico.service";
-import {TesticoHunitDto} from "./dto/testico.hunit.dto";
+import {HunitService} from "./hunit.service";
+import {HunitDto} from "./dto/hunitDto";
 
-@Controller('testico')
-export class TesticoController {
-    constructor(private readonly service: TesticoService) {}
+@Controller('hunit')
+export class HunitController {
+    constructor(private readonly service: HunitService) {}
 
     @Get()
     async index() {
@@ -17,12 +17,12 @@ export class TesticoController {
     }
 
     @Post()
-    async create(@Body() createDto: TesticoHunitDto) {
+    async create(@Body() createDto: HunitDto) {
         return await this.service.create(createDto);
     }
 
     @Put(':id')
-    async update(@Param('id') id: string, @Body() updateDto: TesticoHunitDto) {
+    async update(@Param('id') id: string, @Body() updateDto: HunitDto) {
         return await this.service.update(id, updateDto);
     }
 

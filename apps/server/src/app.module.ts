@@ -6,7 +6,7 @@ import {join} from "path";
 import {ServeStaticModule} from "@nestjs/serve-static";
 import {MongooseModule} from "@nestjs/mongoose";
 import {DatabaseConfigService} from "./config/services/database.config.service";
-import {TesticoModule} from './testico/testico.module';
+import {HunitModule} from './hunit/hunit.module';
 import {TodoModule} from "./todo/todo.module";
 
 @Module({
@@ -21,7 +21,7 @@ import {TodoModule} from "./todo/todo.module";
                 uri: configService.getDatabaseUrl()
             })
         }),
-        TesticoModule,
+        HunitModule,
         TodoModule
     ],
     controllers: [AppController],

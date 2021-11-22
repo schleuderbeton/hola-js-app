@@ -3,10 +3,10 @@ import { InjectModel } from '@nestjs/mongoose';
 import {Model} from 'mongoose';
 import { Hunit, HunitDocument } from './schemas/hunit.schema';
 import {Todo} from "../todo/schemas/todo.schema";
-import {TesticoHunitDto} from "./dto/testico.hunit.dto";
+import {HunitDto} from "./dto/hunitDto";
 
 @Injectable()
-export class TesticoService {
+export class HunitService {
     constructor(@InjectModel(Hunit.name) private model: Model<HunitDocument>) {}
 
     async findAll(): Promise<Hunit[]> {
@@ -17,14 +17,14 @@ export class TesticoService {
         return await this.model.findById(id).exec();
     }
 
-    async create(createHunitDto: TesticoHunitDto): Promise<Hunit> {
+    async create(createHunitDto: HunitDto): Promise<Hunit> {
         return await new this.model({
             ...createHunitDto,
             createdAt: new Date(),
         }).save();
     }
 
-    async update(id: string, updateHunitDto: TesticoHunitDto): Promise<Hunit> {
+    async update(id: string, updateHunitDto: HunitDto): Promise<Hunit> {
         return await this.model.findByIdAndUpdate(id, updateHunitDto).exec();
     }
 

@@ -1,6 +1,5 @@
 [
   {
-    "id": "a1",
     "type": "meat",
     "kind": "beef",
     "name": "filet",
@@ -13,7 +12,6 @@
     "tags": ["2021er", "Sgier Rind"]
   },
   {
-    "id": "a2",
     "type": "vegetable",
     "kind": "chili",
     "name": "chili",
@@ -26,7 +24,6 @@
     "tags": ["r17", "rooftop chilies"]
   },
   {
-    "id": "a3",
     "type": "meal",
     "kind": "beef",
     "name": "bolognese sauce",

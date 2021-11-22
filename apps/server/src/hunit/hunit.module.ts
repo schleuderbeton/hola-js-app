@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { TesticoController } from './testico.controller';
-import { TesticoService } from './testico.service';
+import { HunitController } from './hunit.controller';
+import { HunitService } from './hunit.service';
 import {MongooseModule} from "@nestjs/mongoose";
 import {Hunit, HunitSchema} from "./schemas/hunit.schema";
 
@@ -10,7 +10,7 @@ import {Hunit, HunitSchema} from "./schemas/hunit.schema";
       {name: Hunit.name, schema: HunitSchema},
     ])
   ],
-  controllers: [TesticoController],
-  providers: [TesticoService]
+  controllers: [HunitController],
+  providers: [HunitService]
 })
-export class TesticoModule {}
+export class HunitModule {}

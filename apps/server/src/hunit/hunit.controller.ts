@@ -1,6 +1,6 @@
 import {Controller, Get, Post, Body, Patch, Param, Delete, Put} from '@nestjs/common';
 import {HunitService} from "./hunit.service";
-import {HunitDto} from "./dto/hunitDto";
+import {HunitDto} from "../../../../common/dto/src/hunit/dto/hunitDto";
 
 @Controller('hunit')
 export class HunitController {

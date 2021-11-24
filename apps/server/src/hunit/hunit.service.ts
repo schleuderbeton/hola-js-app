@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import {Model} from 'mongoose';
-import { Hunit, HunitDocument } from './schemas/hunit.schema';
+import { Hunit, HunitDocument } from '../../../../common/dto/src/hunit/schemas/hunit.schema';
 import {Todo} from "../todo/schemas/todo.schema";
-import {HunitDto} from "./dto/hunitDto";
+import {HunitDto} from "../../../../common/dto/src/hunit/dto/hunitDto";
 
 @Injectable()
 export class HunitService {
